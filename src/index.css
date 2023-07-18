@@ -1,0 +1,18 @@
+.boxLogo {
+    width: 100px;
+    height: 100px;
+}
+
+.greeting {
+    background-color: #bb916a;
+
+}
+.greeting h1 {
+    font-size: larger;
+    color: white;
+    text-align: center;
+}
+
+.cart {
+    background-color: #ddc1a7;
+}
