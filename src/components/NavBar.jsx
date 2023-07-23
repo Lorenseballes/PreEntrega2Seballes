@@ -3,6 +3,7 @@ import { Menu, MenuButton, Button, MenuList, MenuItem, Flex, Box, Spacer} from '
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import CartWidget from './CartWidget'
 import logo from './images/logo.jpg'
+import ItemCount from './ItemCount'
 
 
 const NavBar = () => {
@@ -28,6 +29,9 @@ const NavBar = () => {
     </Box>
     <Box p='4' bg='whait.400'>
         <CartWidget/>
+    </Box>
+    <Box>
+    <ItemCount/> 
     </Box>
     </Flex>
   )
