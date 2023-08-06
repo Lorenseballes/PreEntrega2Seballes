@@ -14,6 +14,7 @@ const ItemCount = () => {
 
     </div>
   )
+  
 }
 
 export default ItemCount

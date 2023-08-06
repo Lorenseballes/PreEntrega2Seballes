@@ -1,16 +1,32 @@
 import React from 'react'
 import NavBar from './components/NavBar'
 import ItemListContainer from './components/ItemListContainer'
+import ItemDetailContainer from './components/ItemDetailContainer'
+import Cart from './components/Cart'
+import Home from './components/Home'
+import ProductDetail from './components/ProductDetail'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <NavBar/>
-      <ItemListContainer 
-      greeting= "Bienvenidos a Amaranto Home"
-      />
+
+      <Routes>
+
+      <Route exact path='/' element={<Home/>} />
       
-    </>
+      <Route exact path='/cart' element={<Cart/>} />
+      
+      <Route exact path='/catalogo' element={<ProductDetail/>} />
+
+      <Route exact path='/category/:category' element={<ItemListContainer/>} />
+
+      <Route exact path='/item/:id' element={<ItemDetailContainer/>} />
+
+      </Routes>
+
+    </BrowserRouter>
   )
 }
 
