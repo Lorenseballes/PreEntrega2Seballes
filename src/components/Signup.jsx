@@ -49,7 +49,6 @@ const Signup = () => {
                   placeholder="Email address"  className="form-input"
                 />
               </div>
-
               <div className="form-group">
                 <Label htmlFor="password">Password</Label>
                 <input
@@ -61,12 +60,10 @@ const Signup = () => {
                   placeholder="Password" className="form-input"
                 />
               </div>
-
               <button type="submit" onClick={onSubmit}  className="login-button">
                Registrarse
               </button>
             </Form>
-
             <p>
               Ya tienes una cuenta? <NavLink to="/login">Iniciar Sesión</NavLink>
             </p>
