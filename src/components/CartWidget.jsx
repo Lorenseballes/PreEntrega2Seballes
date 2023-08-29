@@ -1,17 +1,24 @@
 import React from 'react'
-import {Flex, Box} from '@chakra-ui/react'
-import { FaShoppingCart } from 'react-icons/fa'
+import { useContext } from 'react'
+import {CartContext} from '../context/CartContext'
+import { Link } from 'react-router-dom'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
+
 
 
 const CartWidget = () => {
-  return (
-    <Flex>
-       <Box className="cart-icon">
-        <FaShoppingCart />
-      </Box>
-       <Box> 5 </Box>
+  const { quantity }= useContext(CartContext)
 
-    </Flex>
+  return (
+   
+    <Link to={"cart"} className='cardWidget'>
+      
+    {quantity}
+    <ShoppingCartIcon/>
+      
+     </Link>
+   
   )
 }
 
